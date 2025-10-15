@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mood Map</title>
+</head>
+<body>
+    <h1>Entrez votre humeur du jour</h1>
+    <form method="POST">
+        <label for="humeur">Humeur :</label>
+        <input type="text" id="humeur" name="humeur" required />
+        <br><br>
+        <label for="commentaire">Commentaire :</label>
+        <textarea id="commentaire" name="commentaire"></textarea>
+        <br><br>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <h2>Carte des humeurs</h2>
+    <!-- Affichage de la carte Folium -->
+    <iframe src="/static/map.html" width="100%" height="500"></iframe>
+</body>
+</html>
